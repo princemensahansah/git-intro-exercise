@@ -97,6 +97,6 @@ echo "$@"
 
 for file in "$@";do
 
-grep ">" file|wc -l
+grep ">" $file|wc -l;
 
 done
