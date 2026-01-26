@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # How this script should behave:
 #
@@ -93,7 +93,12 @@ echo "$@"
 # Good luck!
 #
 # ADD YOUR CODE BELOW:
-for filepath in "$@"
-do
-   grep ">" basename "$filepath" | wc -l 
+
+
+
+for file in "$@";do
+
+grep ">" $file|wc -l;
+
+>>>>>>> cf1df8e7c1241ef6ded14054973b88111ac9ac58
 done
