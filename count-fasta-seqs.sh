@@ -93,8 +93,7 @@ echo "$@"
 # Good luck!
 #
 # ADD YOUR CODE BELOW:
-
-
+INPUT:~/
 
 for file in "$@";do
 
