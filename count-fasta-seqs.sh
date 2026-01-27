@@ -95,6 +95,7 @@ echo "$@"
 # ADD YOUR CODE BELOW:
 
 
+
 total = 0
 for filepath in "$@"
 do
@@ -105,3 +106,4 @@ do
 done
 
 echo "$total"
+
