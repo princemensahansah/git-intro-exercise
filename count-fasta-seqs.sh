@@ -95,10 +95,13 @@ echo "$@"
 # ADD YOUR CODE BELOW:
 
 
-
-for file in "$@";do
-
-grep ">" $file|wc -l;
-
->>>>>>> cf1df8e7c1241ef6ded14054973b88111ac9ac58
+total = 0
+for filepath in "$@"
+do
+  count=$( grep ">" $filepath | wc -l)
+  file=$(basename "$filepath")
+  echo "$count $file"
+  total=$(( total + count ))
 done
+
+echo "$total"
