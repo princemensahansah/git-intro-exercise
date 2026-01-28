@@ -104,6 +104,3 @@ do
   total=$(expr $total + $count )
 done
 echo "$total"
-
-
-
