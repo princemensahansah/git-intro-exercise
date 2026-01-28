@@ -107,16 +107,6 @@ done
 
 echo "$total"
 =======
-echo "$@"
 
-total=0
-for file_path in "$@"
-do
-    count=$(grep ">" "$file_path" |wc -l)
-    echo $count $file_path
-    total=$(expr $count + $total)
-file_name=$(basename
-done
-echo $total
 
 
