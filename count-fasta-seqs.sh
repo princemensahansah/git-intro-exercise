@@ -61,7 +61,8 @@
 # HINTS
 # The first thing you need to be able to do is access the paths to the fasta
 # files that were 'given to' this script. The variable "$@" will be very useful
-# for this. Let's take a look at what it gives us:
+# for this. Let's take a look at what it gi
+#echo "$@"
 
 
 # How are you going to work with each file path?
@@ -96,7 +97,7 @@
 
 
 total=0
-for filepath in "$@"
+for filepath in "$@";
 do
   count=$(grep ">" $filepath | wc -l)
   file=$(basename $filepath)
