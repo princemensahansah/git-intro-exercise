@@ -63,7 +63,6 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-echo "$@"
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -94,7 +93,7 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
-
+echo "$@"
 
 total=0
 for filepath in "$@"
@@ -104,6 +103,7 @@ do
   echo "$count $file"
   total=$(expr $total + $count )
 done
-
 echo "$total"
+
+
 
