@@ -101,7 +101,7 @@ for filepath in "$@";
 do
   count=$(grep ">" $filepath | wc -l)
   file=$(basename $filepath)
-  echo "$count $file"
+  echo $count $file
   total=$(expr $total + $count)
 done
 echo $total
