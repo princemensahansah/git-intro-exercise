@@ -96,13 +96,13 @@ echo "$@"
 
 
 
-total = 0
+total=0
 for filepath in "$@"
 do
   count=$( grep ">" $filepath | wc -l)
-  file=$(basename "$filepath")
+  file=$(basename $filepath)
   echo "$count $file"
-  total=$(( total + count ))
+  total=$(expr $total + $count )
 done
 
 echo "$total"
