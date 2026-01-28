@@ -96,7 +96,7 @@ echo "$@"
 
 
 
-total = 0
+total=0
 for filepath in "$@"
 do
   count=$( grep ">" $filepath | wc -l)
